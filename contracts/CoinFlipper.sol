@@ -1,5 +1,5 @@
 pragma solidity ^0.4.19;
-contract CoinFlipper {
+contract Ticket {
     address creator;
     int lastgainloss;
     string indicator="=";
@@ -9,7 +9,7 @@ contract CoinFlipper {
     uint lastblocknumberused;
     bytes32 lastblockhashused;
     
-    function CoinFlipper() public payable
+    function Ticket() public payable
     {
         creator = msg.sender;
         lastresult ="no wagers yet";
